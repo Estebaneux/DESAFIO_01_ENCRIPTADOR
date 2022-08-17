@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css" > 
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img id="logo1" src="Logo.png">
+        </h1>          
+    </header>
+
+    <div class="textos">
+        <p id = "copyArea"></p>
+
+        <div id="mostrar1" hidden >            
+            <p id= "resultadoArea" ></p>
+            <textarea id="textOut" type="text"></textarea>
+            <button id="copiText" type="button" onclick="copiText()"><p class="copi_font">Copiar</p></button>
+            
+        </div>
+
+        <div id = "indi1" class="pos1" type="text">
+            <p class="ui" hidden >Ningún mensaje fue encontrado.</p>
+        </div>
+        <img id="logo2" hidden src="Munheco.png">                   
+
+        <div id="ocultar1">
+            <textarea id=textIn type="text" placeholder="Ingrese el texto aqui"></textarea>
+            <img id="logo2" src="Munheco.png">
+            <div id="indi2" class="indi" type="text">                
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>                
+            </div>             
+        </div>       
+    </div>
+
+    <div class="botones1">
+        <button id=encriptarbutton type="button"><p class="font_encrip">Encriptar</p></button>
+        <button id=desencriptarbutton type="button"><p class="font_desencrip">Desencriptar</p></button> 
+    </div>
+
+    <div id="posAd">
+        <img id="advertencia" src="bi_exclamation-circle-fill.png">
+        <p>
+            Solo letras minúsculas y sin acentos
+        </p>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <!-- Clave de encriptacion:
+        `La letra "e" es convertida para "enter"`
+        `La letra "i" es convertida para "imes"`
+        `La letra "a" es convertida para "ai"`
+        `La letra "o" es convertida para "ober"`
+        `La letra "u" es convertida para "ufat"`
+    -->
+    
+</body>
+</html>
+
